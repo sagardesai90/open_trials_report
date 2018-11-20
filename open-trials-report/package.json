@@ -7,9 +7,12 @@
     "cors": "^2.8.5",
     "express": "^4.16.4",
     "helmet": "^3.15.0",
+    "materialize-css": "^1.0.0",
     "mongoose": "^5.3.12",
+    "pdfmake": "^0.1.39",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
+    "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.1"
   },
   "scripts": {
