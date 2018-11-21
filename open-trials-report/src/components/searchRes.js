@@ -55,6 +55,9 @@ class SearchRes extends Component {
                         <div className="collapsible-body">
                             <span className="left-align" info={JSON.stringify(this.props.resultObject)}>
                                 <h6>
+                                    <b>Summary:</b> {this.props.resultObject.brief_summary ? this.props.resultObject.brief_summary : 'No summary provided'}
+                                </h6>
+                                <h6>
                                     <b>Status:</b> {this.props.resultObject.status ? this.props.resultObject.status : 'No status provided'}
                                 </h6>
                                 <h6>
@@ -81,9 +84,7 @@ class SearchRes extends Component {
                                 <h6>
                                     <b>Documents:</b> {!this.props.resultObject.documents ? 'No documents provided' : this.props.resultObject.documents.length === 0 ? 'No documents provided' : <ul> {this.props.resultObject.documents.map((a, i) => <li key={i}>{a.name}</li>)} </ul>}
                                 </h6>
-                                <h6>
-                                    <b>Summary:</b> {this.props.resultObject.brief_summary ? this.props.resultObject.brief_summary : 'No summary provided'}
-                                </h6>
+                               
                                 {!this.state.saved ?
                                     <button
                                         id="saveButton"
