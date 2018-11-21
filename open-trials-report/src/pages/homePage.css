@@ -3,6 +3,9 @@
 h1 {
     text-align: left;
     padding: 15px;
+    background: #1a2639;
+    color: #ffffff; 
+
 }
 
 h6 {
@@ -16,11 +19,16 @@ h5 {
     margin-bottom: -1.8%;
 }
 
-button {
-    margin-top: 20px;
+.searchBtn {
+    margin-top: 3%;
+    
 }
 
 p {
     margin-top: 1%;
     margin-bottom: -0.8%;
+}
+
+.browser-default {
+    margin-top: 1%;
 }

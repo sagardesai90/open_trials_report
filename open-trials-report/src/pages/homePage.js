@@ -76,7 +76,7 @@ class homePage extends Component {
                 {
                     columns: [
                                 { text: 'Open Trial API Report', style: 'header', margin: [0, 10, 0, 10] },
-                                { text: `Search Term Used: ${this.state.topic}`, style: 'header', alignment: 'right', margin: [0, 10, 0, 0] }
+                                { text: `Search Query: ${this.state.topic}`, style: 'header', alignment: 'right', margin: [0, 10, 0, 0] }
                             ]
                 },
                 {
@@ -135,7 +135,7 @@ class homePage extends Component {
                                     placeholder="Find trial by keywords (eg. cancer)"
                                 />
                                 <button
-                                    className="btn btn-primary"
+                                    className="btn searchBtn btn-primary"
                                     type="submit"
                                     value="Search"
                                 >
