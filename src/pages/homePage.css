@@ -32,3 +32,12 @@ p {
 .browser-default {
     margin-top: 1%;
 }
+
+.modal-title {
+    margin-bottom: 0.1%;
+    text-align: center;
+}
+
+.modal-footer {
+    margin-bottom: 5%;
+}

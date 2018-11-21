@@ -158,7 +158,7 @@ class homePage extends Component {
                                 </div>
                             </div>
                         </form>
-                        <button onClick={this.createPreview} className="btn modal-trigger" data-target="downloadModal">Download Report</button>
+                        
                     </div>
                 </div>
                 <div className="result-panel" >
@@ -171,22 +171,18 @@ class homePage extends Component {
                 </div>
                 <div className="modal modal-fixed-footer" id="downloadModal">
                         <div className="modal-content">
-                           
+                        <button onClick={this.createPreview} className="btn modal-trigger" data-target="downloadModal">Download Report</button>
                             <h5 className="modal-title" id="exampleModalLabel">Name Your Report{this.state.fileNameInput !== '' ? `: ${this.state.fileNameInput}.pdf` : null }</h5>
                                 <form>
                                     <input onChange={this.handleInputChange}
                                         className="validate"
-                                        value={this.state.fileNameInput} placeholder="eg. my_first_report" type="text" id="fileNameInput" name="fileNameInput"/>
+                                        value={this.state.fileNameInput} placeholder="e.g. my_report" type="text" id="fileNameInput" name="fileNameInput"/>
                                 </form>
                             < iframe id='pdfV' title="pdfPreview" style={{ "width": 600, 'height': 375 }} > </ iframe>
                            </div>
                             
                             <div className="modal-footer">
-                           
-                        <button
-                            style={{marginRight: 6}} type="button" className="modal-close btn red">
-                                    Close
-                                </button>
+                                <button style={{marginRight: 6}} type="button" className="modal-close btn red">Close</button>
                                 <button type="submit" onClick={this.downloadPdf} className="btn btn-primary">Download</button>
                             </div>
                         </div>
