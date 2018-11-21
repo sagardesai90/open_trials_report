@@ -3,7 +3,12 @@ h1 {
     padding: 15px;
 }
 
-h5 {
+h6 {
     text-align: left;
-    padding: 5 50 50 50;
+    padding: 5 5 5 5;
+    margin-bottom: -1.8%;
+}
+
+button {
+    margin-top: 20px;
 }
