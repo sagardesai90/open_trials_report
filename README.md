@@ -1,6 +1,8 @@
 # Open Trials Report
 Using Open Trials API to generate reports based on user search queries.
 
+I also deployed the app at https://determined-meninsky-8be671.netlify.com. 
+
 ## Description
 This is a client side app thats lets the user search for articles through the Open Trials API. The user can search any query, select the number of items they'd like to see, and view them in a systematic way. There is also the ability to print to PDF each of the reports.
 
