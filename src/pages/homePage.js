@@ -126,13 +126,13 @@ class homePage extends Component {
                 {/* <img src="../images/openTrialsLogo.jpg"></img> */}
                 <h5 className="instructions">Search for clinical and research trials by entering a query below. You can search for specific conditions, researchers, trials, institutitions, among other filters.</h5>
                 <div className="">
-                    <div>
+                    <div className="search-card mdl-card mdl-shadow-2dp">
                         <form id="form" onSubmit={this.submitSearch}>
-                            <div className="form-group">
+                            <div className="form-group mdl-textfield mdl-js-textfield">
                                 <input
                                     id="searchInput"
                                     type="text"
-                                    placeholder="Find trial by keywords (eg. cancer)"
+                                    placeholder="Find by keywords (eg. cancer)"
                                 />
                                 <button
                                     className="btn searchBtn btn-primary"
@@ -142,6 +142,8 @@ class homePage extends Component {
                                 Search
                                 </button>
                             </div>
+                            
+                            
                             <div className="row">
                                 <div className="form-group ">
                                     <div className="input-field">

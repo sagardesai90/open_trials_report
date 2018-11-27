@@ -41,3 +41,18 @@ p {
 .modal-footer {
     margin-bottom: 5%;
 }
+
+.search-card {
+    width: 90%;
+  
+    /* // tablet */
+    @media screen and (min-width: 768px) {
+    width: 650px;
+    }
+}
+
+.mdl-textfield {
+    margin: auto;
+    /* padding: 10px; */
+    width: 100%;
+}
