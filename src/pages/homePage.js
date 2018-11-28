@@ -129,20 +129,15 @@ class homePage extends Component {
                     <div className="search-card mdl-card mdl-shadow-2dp">
                         <form id="form" onSubmit={this.submitSearch}>
                             <div className="form-group mdl-textfield mdl-js-textfield">
-                                <input
-                                    id="searchInput"
-                                    type="text"
-                                    placeholder="Find by keywords (eg. cancer)"
-                                />
-                                <button
-                                    className="btn searchBtn btn-primary"
-                                    type="submit"
-                                    value="Search"
-                                >
-                                Search
-                                </button>
+                                <input id="searchInput" type="text" placeholder="Find by keywords (eg. cancer)"/>
+                                <button className="btn searchBtn btn-primary" type="submit" value="Search">Search</button>
                             </div>
-                            
+                            <body>
+                                <form class="search-container" id="form" onSubmit={this.submitSearch}>
+                                    <input type="text" id="search-bar" placeholder="Find by keywords (eg. cancer)"/>
+                                    <a href="#"><img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"/></a>
+                                </form>
+                            </body>
                             
                             <div className="row">
                                 <div className="form-group ">
