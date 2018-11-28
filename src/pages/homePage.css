@@ -78,7 +78,7 @@ p {
   }
   
   .search__button {
-    box-shadow: -10px 0 10px -5px rgba(10, 15, 22, 0.5);
+    box-shadow: 10px 0 10px -5px rgba(10, 15, 22, 0.5);
     color: #fff;
     background-color: #1a2639;
     width: 50px;

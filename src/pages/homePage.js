@@ -128,7 +128,7 @@ class homePage extends Component {
                 <div className="form">
                     <div className="search-card mdl-card mdl-shadow-2dp">
                         <form id="form" onSubmit={this.submitSearch}>
-                            
+                            <div className="form-group mdl-textfield mdl-js-textfield">
                                 <input
                                     id="search__input"
                                     className="search__input"
@@ -142,7 +142,7 @@ class homePage extends Component {
                                 >
                                 Search
                                 </button>
-                            
+                            </div>
                             
                             
                             <div className="row">
