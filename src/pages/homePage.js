@@ -20,7 +20,7 @@ class homePage extends Component {
     };
 
     componentDidMount() {
-        document.getElementById('searchInput').focus();
+        document.getElementById('search__input').focus();
         document.addEventListener('DOMContentLoaded', function () {
             var elems = document.querySelectorAll('.collapsible');
             M.Collapsible.init(elems, {});
@@ -125,23 +125,24 @@ class homePage extends Component {
                 <h1>Open Trials Report</h1>
                 {/* <img src="../images/openTrialsLogo.jpg"></img> */}
                 <h5 className="instructions">Search for clinical and research trials by entering a query below. You can search for specific conditions, researchers, trials, institutitions, among other filters.</h5>
-                <div className="">
+                <div className="form">
                     <div className="search-card mdl-card mdl-shadow-2dp">
                         <form id="form" onSubmit={this.submitSearch}>
-                            <div className="form-group mdl-textfield mdl-js-textfield">
+                            
                                 <input
-                                    id="searchInput"
+                                    id="search__input"
+                                    className="search__input"
                                     type="text"
                                     placeholder="Find by keywords (eg. cancer)"
                                 />
                                 <button
-                                    className="btn searchBtn btn-primary"
+                                    className="btn btn-primary fa fa-search search__button"
                                     type="submit"
                                     value="Search"
                                 >
                                 Search
                                 </button>
-                            </div>
+                            
                             
                             
                             <div className="row">
