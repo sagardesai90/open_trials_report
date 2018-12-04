@@ -1,7 +1,7 @@
 # Open Trials Report
 Using Open Trials API to generate reports based on user search queries.
 
-I also deployed the app at https://opentrialsreport.com/. 
+I also deployed the app at https://opentrialsreport.com/. You can find a breif tutorial here: https://www.youtube.com/watch?v=fAbm97yQwFM&feature=share.
 
 ## Description
 This is a client side app thats lets the user search for articles through the Open Trials API. The user can search any query, select the number of items they'd like to see, and view them in a systematic way. There is also the ability to print to PDF each of the reports.
