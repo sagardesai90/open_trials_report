@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import M from 'materialize-css';
 import "./searchRes.css";
+import Row from 'antd/lib/row';
+import Col from 'antd/lib/col';
 
 class SearchRes extends Component {
     constructor(props) {
@@ -44,12 +46,12 @@ class SearchRes extends Component {
 
     render() {
         return (
-            
-                <div class="card row">
-                    <div class="col-md-4 col-xs-12">
-                        <div className="collapsible-header">
+            <div className="row">
+                <div className="column"> 
+                    <div className="card">
+                        <div>
                             <h6 class="color-block-head">
-                                {this.props.number + 1} {this.props.resultObject.public_title}
+                                {this.props.number + 1} : {this.props.resultObject.public_title}
                             </h6>
                         </div>
                         <div className="collapsible-body">
@@ -79,7 +81,7 @@ class SearchRes extends Component {
                                     <b>Locations:</b> {!this.props.resultObject.locations ? 'No locations provided' : this.props.resultObject.locations.length === 0 ? 'No locations provided' : <ul> {this.props.resultObject.locations.map((a, i) => <li key={i}>{a.name}</li>)} </ul>}
                                 </h6>
                                 <h6>
-                                    <b>Records:</b> {!this.props.resultObject.records ? 'No records provided' : this.props.resultObject.records.length === 0 ? 'No records provided' : <ul> {this.props.resultObject.records.map((a, i) => <li key={i}><a target='_blank' href={a.source_url}>{a.source_url}</a></li>)} </ul>}
+                                    <b>Records:</b> {!this.props.resultObject.records ? 'No records provided' : this.props.resultObject.records.length === 0 ? 'No records provided' : <ul> {this.props.resultObject.records.map((a, i) => <li key={i}><a className="links" target='_blank' href={a.source_url}>{a.source_url}</a></li>)} </ul>}
                                 </h6>
                                 <h6>
                                     <b>Documents:</b> {!this.props.resultObject.documents ? 'No documents provided' : this.props.resultObject.documents.length === 0 ? 'No documents provided' : <ul> {this.props.resultObject.documents.map((a, i) => <li key={i}>{a.name}</li>)} </ul>}
@@ -105,6 +107,8 @@ class SearchRes extends Component {
                         </div>
                     </div>
                 </div>
+
+            </div>
             
         )
     };
