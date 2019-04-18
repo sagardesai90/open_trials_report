@@ -48,7 +48,7 @@ class SearchRes extends Component {
         return (
             <div className="row">
                 <div className="column"> 
-                    <div className="card">
+                    <div className="card ">
                         <div>
                             <h6 class="color-block-head">
                                 {this.props.number + 1} : {this.props.resultObject.public_title}
@@ -81,7 +81,7 @@ class SearchRes extends Component {
                                     <b>Locations:</b> {!this.props.resultObject.locations ? 'No locations provided' : this.props.resultObject.locations.length === 0 ? 'No locations provided' : <ul> {this.props.resultObject.locations.map((a, i) => <li key={i}>{a.name}</li>)} </ul>}
                                 </h6>
                                 <h6>
-                                    <b>Records:</b> {!this.props.resultObject.records ? 'No records provided' : this.props.resultObject.records.length === 0 ? 'No records provided' : <ul> {this.props.resultObject.records.map((a, i) => <li key={i}><a className="links" target='_blank' href={a.source_url}>{a.source_url}</a></li>)} </ul>}
+                                    <b>Records:</b> {!this.props.resultObject.records ? 'No records provided' : this.props.resultObject.records.length === 0 ? 'No records provided' : <ul className="dont-break-out"> {this.props.resultObject.records.map((a, i) => <li key={i}><a className="links" target='_blank' href={a.source_url}>{a.source_url}</a></li>)} </ul>}
                                 </h6>
                                 <h6>
                                     <b>Documents:</b> {!this.props.resultObject.documents ? 'No documents provided' : this.props.resultObject.documents.length === 0 ? 'No documents provided' : <ul> {this.props.resultObject.documents.map((a, i) => <li key={i}>{a.name}</li>)} </ul>}

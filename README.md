@@ -28,3 +28,6 @@ opentrialsreport.com
 I'll definitely work to make the site more mobile friendly, so that users can have a great experience on the go. Additionally, there could be a way to show icons instead of text in some of the fields (e.g. status, target_sample_size), this would make better use of space.
 
 The search functionality can be given more filters, so that specific fields are required (e.g. location === USA, status === active).  
+
+Update 4/18/19
+Updated cards to show in grid form instead of list.
