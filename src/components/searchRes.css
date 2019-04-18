@@ -16,23 +16,26 @@ h6 {
     font-size: 23px;
     line-height: 1;
     margin-bottom: 20px;
-    background: #ffffff;
-    color: #111111;
+    color: #ffffff;
     width: 100%;
 }
 
 .card {
-    max-width: 100%;
      min-height: 100px;
-     background: #1a2639;
+     /* background: #1a2639; */
      padding: 30px;  
-     box-sizing: border-box;
-     box-shadow: 0 4px 80px 0 rgba(0,0,0,0.9);
-     color: #FFF;
+     /* color: #FFF; */
      margin: 0 0 20px 0;
+    border-style: dotted;
+    padding-left: 3%;
+     /* box-sizing: border-box; */
+     /* box-shadow: 0 4px 80px 0 rgba(0,0,0,0.9); */
      /* align-content: 'center'; */
-     display: inline-block;
+     /* display: inline-block; */
      
+}
+.collapsible-body {
+    border-style: dotted;
 }
 
 .addRemove {

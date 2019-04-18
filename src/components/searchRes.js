@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import M from 'materialize-css';
 import "./searchRes.css";
+import Row from 'antd/lib/row';
+import Col from 'antd/lib/col';
 
 class SearchRes extends Component {
     constructor(props) {
@@ -45,11 +47,11 @@ class SearchRes extends Component {
     render() {
         return (
             
-                <div class="card row">
-                    <div class="col-md-4 col-xs-12">
-                        <div className="collapsible-header">
+                <Row gutter={16}> 
+                    <Col className="card" span={6}>
+                        <div>
                             <h6 class="color-block-head">
-                                {this.props.number + 1} {this.props.resultObject.public_title}
+                                {this.props.number + 1} : {this.props.resultObject.public_title}
                             </h6>
                         </div>
                         <div className="collapsible-body">
@@ -103,8 +105,8 @@ class SearchRes extends Component {
                                 }
                             </span>
                         </div>
-                    </div>
-                </div>
+                    </Col>
+                </Row>
             
         )
     };
