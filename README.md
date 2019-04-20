@@ -31,3 +31,8 @@ The search functionality can be given more filters, so that specific fields are 
 
 Update 4/18/19
 Updated cards to show in grid form instead of list.
+
+To Do:
+-find out why the scrolling stops upon clicking download
+-see if the modal can hold the iframe
+-perhaps change the format of the pdf that is generated
